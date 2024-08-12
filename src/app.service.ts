@@ -5,4 +5,7 @@ export class AppService {
   getHello(): string {
     return 'Hello ironvlack!';
   }
+  getHelloWorld(): string {
+    return 'Hello world!';
+  }
 }

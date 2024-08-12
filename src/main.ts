@@ -5,6 +5,7 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  // Swagger configuration
   const config = new DocumentBuilder()
     .setTitle('Basic authentication - Nestjs')
     .setDescription('Example of a basic authentication using Nestjs and Jwt')
