@@ -3,5 +3,6 @@ import { databaseConfig } from './database.config';
 
 export const DatabaseModule = SequelizeModule.forRoot({
   ...databaseConfig,
-  models: [],
+  autoLoadModels: true,
+  synchronize: true,
 });
